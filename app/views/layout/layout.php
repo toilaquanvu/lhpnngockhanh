@@ -28,18 +28,18 @@
           http://localhost/lhpnngockhanh/public/?route=quan_ly_chi_hoi
           ">Quản lý chi hội</a>
         </li>
-
+          <li class="nav-item">
+              <a class="nav-link" href="
+          http://localhost/lhpnngockhanh/public/?route=hoat_dong_hoi_vien
+          ">Quản lý hoạt động hội viên</a>
+          </li>
         <li class="nav-item">
           <a class="nav-link" href="
           http://localhost/lhpnngockhanh/public/?route=quan_ly_hoi_vien
           ">Quản lý hội viên</a>
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="
-          http://localhost/lhpnngockhanh/public/?route=hoat_dong_hoi_vien
-          ">Quản lý hoạt động hội viên</a>
-        </li>
+
       </ul>
       <div class="d-flex gap-2" >
       <?php

@@ -8,6 +8,19 @@
     <title>Document</title>
 </head>
 <body>
-Quản lý hđ chi hội
+
+<?php
+include_once '../app/views/layout/layout.php';
+?>
+
+<nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1 text-uppercase"><i class="bi bi-arrow-left"></i>
+                Quản lý hoạt động chi hội
+                phường Ngọc Khánh, Quận Ba Đình, Thành Phố Hà Nội</a></span>
+            </span>
+    </div>
+
+
 </body>
 </html>
