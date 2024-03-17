@@ -22,6 +22,7 @@
       <h4 class="text-decoration-underline text-primary">THÔNG TIN HỘI VIÊN</h4>
       <img src="https://via.placeholder.com/150" alt="Ảnh đại diện">
     </div>
+
     <div class="d-flex align-items-end mb-3 ">
 
 

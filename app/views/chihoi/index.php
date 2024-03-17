@@ -15,8 +15,8 @@
     include_once '../app/views/layout/layout.php';
   ?>
   <div class="container">
-    <a href="http://localhost/lhpnngockhanh/public/?route=quan_ly_chi_hoi/them_chi_hoi" class="btn btn-primary my-2">Thêm chi
-      hội</a>
+    <h3 class="text-center my-3">Danh sách chi hội</h3>
+    <a href="http://localhost/lhpnngockhanh/public/?route=them_chi_hoi" class="btn btn-primary">Thêm chi hội</a>
     <table class="table table-bordered table-striped">
       <thead class="table-dark" >
         <tr>
@@ -39,9 +39,9 @@
             echo '<td>' . $item->getChuTich() . '</td>';
             echo '<td>' . $item->getSoLuongHoiVien() . '</td>';
             echo '<td>';
-            echo '<a href="http://localhost/lhpnngockhanh/public/?route=quan_ly_chi_hoi/chi_tiet_chi_hoi&id=' . $item->getId() . '" class=" mx-2 btn btn-primary">Xem</a>';
-            echo '<a href="http://localhost/lhpnngockhanh/public/?route=quan_ly_chi_hoi/sua_chi_hoi&id=' . $item->getId() . '" class=" mx-2 btn btn-primary">Sửa</a>';
-            echo '<a href="http://localhost/lhpnngockhanh/public/?route=quan_ly_chi_hoi/xoa_chi_hoi&id=' . $item->getId() . '" class=" mx-2 btn btn-danger" onclick="return confirmDelete()">Xóa</a>';
+            echo '<a href="http://localhost/lhpnngockhanh/public/?route=chi_tiet_chi_hoi&id=' . $item->getId() . '" class=" mx-2 btn btn-primary">Xem</a>';
+            echo '<a href="http://localhost/lhpnngockhanh/public/?route=sua_chi_hoi&id=' . $item->getId() . '" class=" mx-2 btn btn-primary">Sửa</a>';
+            echo '<a href="http://localhost/lhpnngockhanh/public/?route=xoa_chi_hoi&id=' . $item->getId() . '" class=" mx-2 btn btn-danger" onclick="return confirmDelete()">Xóa</a>';
             echo '</td>';
             echo '</tr>';
           }

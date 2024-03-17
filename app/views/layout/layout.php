@@ -30,7 +30,7 @@
         </li>
           <li class="nav-item">
               <a class="nav-link" href="
-          http://localhost/lhpnngockhanh/public/?route=hoat_dong_hoi_vien
+          http://localhost/lhpnngockhanh/public/?route=hoat_dong_chi_hoi
           ">Quản lý hoạt động hội viên</a>
           </li>
         <li class="nav-item">
