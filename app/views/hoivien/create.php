@@ -14,7 +14,7 @@ include_once '../app/views/layout/layout.php';
 
 <div class="container">
     <h1 class="text-center">Thêm mới hội viên</h1>
-    <form action="http://localhost/lhpnngockhanh/public/?route=luu_hoi_vien" method="POST">
+    <form action="?route=luu_hoi_vien" method="POST">
         <div class="mb-3">
             <label for="f_ten" class="form-label">Họ</label>
             <input type="text" class="form-control" id="f_ten" name="f_ten">
@@ -71,7 +71,7 @@ include_once '../app/views/layout/layout.php';
         </div>
 
         <button type="submit" class="btn btn-primary">Lưu</button>
-        <a class="btn btn-primary" href="http://localhost/lhpnngockhanh/public/?route=quan_ly_hoi_vien">Quay lại</a>
+        <a class="btn btn-primary" href="?route=quan_ly_hoi_vien">Quay lại</a>
     </form>
 </div>
 </body>

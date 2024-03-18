@@ -59,7 +59,7 @@
                 </button>
 
                 <a class=" btn btn-primary" href=
-                "http://localhost/lhpnngockhanh/public/?route=quan_ly_hoi_vien"
+                "?route=quan_ly_hoi_vien"
                 >Trở lại</a>
 
                 <div class="modal fade " id="addNewModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -73,7 +73,7 @@
                             </div>
                             <div class="modal-body
                             ">
-                                <form action="http://localhost/lhpnngockhanh/public/?route=cap_nhat_hoi_vien" method="POST">
+                                <form action="?route=cap_nhat_hoi_vien" method="POST">
                                     <input type="hidden" name="id" value="<?php echo $hoiVien->getId(); ?>">
                                     <div class="mb-3">
                                         <label for="hoTen" class="form-label">Họ</label>

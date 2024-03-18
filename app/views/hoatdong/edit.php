@@ -64,7 +64,7 @@
 
 
         <button type="submit" class="btn btn-primary">Cập nhật</button>
-        <a class="btn btn-primary" href="http://localhost/lhpnngockhanh/public/?route=quan_ly_hoi_vien">Quay lại</a>
+        <a class="btn btn-primary" href="?route=quan_ly_hoi_vien">Quay lại</a>
     </form>
 </div>
 

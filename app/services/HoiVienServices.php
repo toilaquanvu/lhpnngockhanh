@@ -85,7 +85,7 @@ class HoiVienServices
             $stmt->bindParam(':id_chi_hoi', $id_chi_hoi);
             $stmt->bindParam(':chuc_vu', $chuc_vu);
             $stmt->execute();
-            header('Location: http://localhost/lhpnngockhanh/public/?route=quan_ly_hoi_vien');
+            header('Location:' . DOMAIN . '?route=quan_ly_hoi_vien');
         } catch (PDOException $e) {
             error_log("khong the them hoi vien: " . $e->getMessage());
             return false;
@@ -109,7 +109,7 @@ class HoiVienServices
             $stmt->bindParam(':id_chi_hoi', $id_chi_hoi);
             $stmt->bindParam(':chuc_vu', $chuc_vu);
             $stmt->execute();
-            header('Location: http://localhost/lhpnngockhanh/public/?route=quan_ly_hoi_vien');
+            header('Location:' . DOMAIN . '?route=quan_ly_hoi_vien');
         } catch (PDOException $e) {
             error_log("khong the cap nhat hoi vien: " . $e->getMessage());
             return false;
@@ -124,7 +124,7 @@ class HoiVienServices
             $stmt = $conn->prepare($sql);
             $stmt->bindParam(':id', $id);
             $stmt->execute();
-            header('Location: http://localhost/lhpnngockhanh/public/?route=quan_ly_hoi_vien');
+            header('Location:' . DOMAIN . '?route=quan_ly_hoi_vien');
         } catch (PDOException $e) {
             error_log("khong the xoa hoi vien: " . $e->getMessage());
             return false;

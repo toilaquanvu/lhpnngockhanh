@@ -14,7 +14,7 @@ include_once '../app/views/layout/layout.php';
 
 <div class="container">
     <h1 class="text-center">Sửa thông tin hội viên</h1>
-    <form action="http://localhost/lhpnngockhanh/public/?route=cap_nhat_hoi_vien" method="POST">
+    <form action="?route=cap_nhat_hoi_vien" method="POST">
         <input type="hidden" name="id" value="<?php echo $hoiVien->getId(); ?>">
         <div class="mb-3">
             <label for="f_ten" class="form-label">Họ</label>
@@ -64,7 +64,7 @@ include_once '../app/views/layout/layout.php';
         </div>
 
         <button type="submit" class="btn btn-primary">Cập nhật</button>
-        <a class="btn btn-primary" href="http://localhost/lhpnngockhanh/public/?route=quan_ly_hoi_vien">Quay lại</a>
+        <a class="btn btn-primary" href="?route=quan_ly_hoi_vien">Quay lại</a>
     </form>
 </div>
 </body>

@@ -43,7 +43,7 @@
                 <div class="mb-3">
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addNewModal" data-bs-whatever="addNew">Sửa thông tin</button>
 
-                    <a href="http://localhost/lhpnngockhanh/public/?route=quan_ly_chi_hoi" class="btn btn-primary">Trở lại</a>
+                    <a href="?route=quan_ly_chi_hoi" class="btn btn-primary">Trở lại</a>
 
                     <div class="modal fade" id="addNewModal" tabindex="-1" aria-labelledby="addNewModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
@@ -53,7 +53,7 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body ">
-                                    <form action="http://localhost/lhpnngockhanh/public/?route=cap_nhat_chi_hoi" method="post">
+                                    <form action="?route=cap_nhat_chi_hoi" method="post">
                                         <div class="mb-3">
                                             <label for="ten_chi_hoi" class="form-label">Tên chi hội</label>
                                             <input type="text" class="form-control" id="ten_chi_hoi" name="ten_chi_hoi" value="<?php echo $chiHoi->getTenChiHoi(); ?>">

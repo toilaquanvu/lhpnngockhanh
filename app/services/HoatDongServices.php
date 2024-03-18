@@ -38,7 +38,7 @@ class HoatDongServices
             $sql = "INSERT INTO hoat_dong (ten_hoat_dong, so_luong, noi_dung, ket_qua, thoi_gian, dia_diem, id_chi_hoi) VALUES (?, ?, ?, ?, ?, ?, ?)";
             $stmt = $conn->prepare($sql);
             $stmt->execute([$tenHoatDong, $soLuong, $noiDung, $ketQua, $thoiGian, $diaDiem, $idChiHoi]);
-            header('Location: ?route=hoat_dong_chi_hoi');
+            header('Location:' .DOMAIN . '?route=hoat_dong_chi_hoi');
         } catch (PDOException $e) {
             error_log("khong the tao hoat dong: " . $e->getMessage());
         }
@@ -69,7 +69,7 @@ class HoatDongServices
             $sql = "DELETE FROM hoat_dong WHERE id = ?";
             $stmt = $conn->prepare($sql);
             $stmt->execute([$id]);
-            header('Location: ?route=hoat_dong_chi_hoi');
+            header('Location:' .DOMAIN. '?route=hoat_dong_chi_hoi');
         } catch (PDOException $e) {
             error_log("khong the xoa hoat dong: " . $e->getMessage());
         }

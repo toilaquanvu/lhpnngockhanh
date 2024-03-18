@@ -14,26 +14,24 @@
 <body>
 
   <div class="container">
-    <div class="body d-md-flex align-items-center justify-content-between">
-      <div class="box-1 
+    <div class="body d-md-flex ">
+      <div class="box-1
       d-flex
       flex-column
       align-items-center
       justify-content-center
-
+      w-50
+      h-50
       ">
       <br/>
 
         <img
           src="../public/images/logo_vwu.png"
           class="
-          img-fluid
-          w-50
-          h-50
-          rounded-circle
-          mb-3
-          my-3
-          
+            img-fluid
+               w-25
+            h-75
+
           " alt="">
           <div class="
           d-flex
@@ -42,8 +40,8 @@
           justify-content-center
         " >
 
-          <h3 class="h-1 fs-6 text-uppercase">HỆ THỐNG ĐĂNG NHẬP TẬP TRUNG</h3>
-          <h3 class="h-1 fs-6 text-uppercase">HỘI LIÊN HIỆP PHỤ NỮ VIỆT NAM</h3>
+          <h3 class="h-1 fs-6 text-white  text-uppercase">HỆ THỐNG ĐĂNG NHẬP TẬP TRUNG</h3>
+          <h3 class="h-1 fs-6  text-white text-uppercase">HỘI LIÊN HIỆP PHỤ NỮ VIỆT NAM</h3>
         </div>
       </div>
       <div class=" box-2 d-flex flex-column">
@@ -51,13 +49,12 @@
           d-flex
           flex-column
           align-items-center
-          justify-content-center
         " >
 
-          <h3 class="h-1 fs-6 text-uppercase">Đăng nhập</h3>
+          <h3 class="h-1 fs-6 text-white text-uppercase">Đăng nhập</h3>
         </div>
         <div class="mt-2">
-          <form method="POST" action="http://localhost/lhpnngockhanh/public/?route=login-user">
+          <form method="POST" action="?route=login-user">
             <div class="mb-3">
               <label for="username" class="form-label text-white">Tên tài khoản</label>
               <input type="text" class="form-control" id="username" name="username">

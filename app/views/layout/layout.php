@@ -12,7 +12,7 @@
 
 <nav class="navbar navbar-expand navbar-dark bg-primary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="http://localhost/lhpnngockhanh/public/?route=thong_ke">QUẢN LÝ NHÂN SỰ</a>
+    <a class="navbar-brand" href="?route=thong_ke">QUẢN LÝ NHÂN SỰ</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -20,22 +20,22 @@
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link" href="
-          http://localhost/lhpnngockhanh/public/?route=thong_ke
+          ?route=thong_ke
           ">Tổng quan</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="
-          http://localhost/lhpnngockhanh/public/?route=quan_ly_chi_hoi
+          ?route=quan_ly_chi_hoi
           ">Quản lý chi hội</a>
         </li>
           <li class="nav-item">
               <a class="nav-link" href="
-          http://localhost/lhpnngockhanh/public/?route=hoat_dong_chi_hoi
+          ?route=hoat_dong_chi_hoi
           ">Quản lý hoạt động hội viên</a>
           </li>
         <li class="nav-item">
           <a class="nav-link" href="
-          http://localhost/lhpnngockhanh/public/?route=quan_ly_hoi_vien
+          ?route=quan_ly_hoi_vien
           ">Quản lý hội viên</a>
         </li>
 
@@ -48,11 +48,11 @@
                 echo 'Xin chào, ' . $_SESSION['username'] . '!';
                 echo '</div>';
                 echo '<a class="btn btn-outline-success" href="
-                http://localhost/lhpnngockhanh/public/?route=logout
+                ?route=logout
                 ">Đăng xuất</a>';
               } else {
                 echo '<a class="btn btn-outline-success" href="
-                http://localhost/lhpnngockhanh/public/?route=login
+                ?route=login
                 ">Đăng nhập</a>';
               }
             ?>

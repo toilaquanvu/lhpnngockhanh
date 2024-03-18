@@ -8,6 +8,7 @@
 <body>
 <?php
 include_once '../app/views/layout/layout.php';
+
 ?>
 <section>
     <div class="d-flex justify-content-between align-items-center container my-3 mw-100 h-70 bg-secondary-subtle">
@@ -15,7 +16,9 @@ include_once '../app/views/layout/layout.php';
             <h4 class="text-decoration-underline text-primary">THÔNG TIN HỘI VIÊN</h4>
         </div>
         <div class="d-flex align-items-end mb-3 ">
-            <form action="http://localhost/lhpnngockhanh/public/" method="GET">
+            <form action="
+            <?php echo DOMAIN; ?>
+" method="GET">
                 <input type="hidden" name="route" value="quan_ly_hoi_vien">
                 <select class="form-select" aria-label="Default select example" name="id_chi_hoi">
                     <option selected>Chọn chi hội</option>
@@ -26,7 +29,7 @@ include_once '../app/views/layout/layout.php';
                 <button class="btn btn-primary" type="submit">Xem danh sách</button>
             </form>
 
-            <a class="btn btn-primary" href="http://localhost/lhpnngockhanh/public/?route=them_hoi_vien">Thêm mới</a>
+            <a class="btn btn-primary" href="?route=them_hoi_vien">Thêm mới</a>
         </div>
     </div>
 
@@ -58,9 +61,9 @@ include_once '../app/views/layout/layout.php';
                 <td><?php echo $hv->getIdChiHoi(); ?></td>
                 <td><?php echo $hv->getChucVu(); ?></td>
                 <td>
-                    <a href="http://localhost/lhpnngockhanh/public/?route=thong_tin_hoi_vien&id=<?php echo $hv->getId(); ?>">Xem</a>
-                    <a href="http://localhost/lhpnngockhanh/public/?route=sua_hoi_vien&id=<?php echo $hv->getId(); ?>">Sửa</a>
-                    <a href="http://localhost/lhpnngockhanh/public/?route=xoa_hoi_vien&id=<?php echo $hv->getId(); ?>"
+                    <a href="?route=thong_tin_hoi_vien&id=<?php echo $hv->getId(); ?>">Xem</a>
+                    <a href="?route=sua_hoi_vien&id=<?php echo $hv->getId(); ?>">Sửa</a>
+                    <a href="?route=xoa_hoi_vien&id=<?php echo $hv->getId(); ?>"
                        onclick="return confirmDelete()">Xóa</a>
 
                 </td>

@@ -11,7 +11,7 @@
   <?php include_once '../app/views/layout/layout.php'; ?>
   <div class="container">
     <h3>Thêm chi hội</h3>
-    <form action="http://localhost/lhpnngockhanh/public/?route=luu_chi_hoi" method="post">
+    <form action="?route=luu_chi_hoi" method="post">
       <div class="mb-3">
         <label for="ten_chi_hoi" class="form-label">Tên chi hội</label>
         <input type="text" class="form-control" id="ten_chi_hoi" name="ten_chi_hoi">

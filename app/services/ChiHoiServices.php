@@ -40,7 +40,7 @@ class ChiHoiServices {
       $stmt->bindParam(':chu_tich', $chuTich);
       $stmt->bindParam(':so_luong_hoi_vien', $soLuongHoiVien);
       $stmt->execute();
-      header('Location: http://localhost/lhpnngockhanh/public/?route=quan_ly_chi_hoi');
+      header('Location:' . DOMAIN . '?route=quan_ly_chi_hoi');
     } catch (PDOException $e) {
       error_log("khong the tao chi hoi: " . $e->getMessage());
     }
@@ -76,7 +76,7 @@ class ChiHoiServices {
         $stmt->bindParam(':chu_tich', $chuTich);
         $stmt->bindParam(':so_luong_hoi_vien', $soLuongHoiVien);
         $stmt->execute();
-        header('Location: http://localhost/lhpnngockhanh/public/?route=quan_ly_chi_hoi');
+        header('Location:' . DOMAIN . '?route=quan_ly_chi_hoi');
         } catch (PDOException $e) {
         error_log("khong the cap nhat chi hoi: " . $e->getMessage());
         }
@@ -89,7 +89,7 @@ class ChiHoiServices {
         $stmt = $conn->prepare($sql);
         $stmt->bindParam(':id', $id);
         $stmt->execute();
-        header('Location: http://localhost/lhpnngockhanh/public/?route=quan_ly_chi_hoi');
+        header('Location:'  .DOMAIN . '?route=quan_ly_chi_hoi');
         } catch (PDOException $e) {
         error_log("khong the xoa chi hoi: " . $e->getMessage());
         }
