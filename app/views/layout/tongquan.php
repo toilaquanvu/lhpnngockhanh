@@ -79,7 +79,7 @@
       </thead>
       <tbody>
         <tr>
-          <td> <i class="bi bi-bookmark-plus-fill"></i> Thị trấn Hòa Thành</td>
+          <td> <i class="bi bi-bookmark-plus-fill"></i> Chi hội phụ nữ số 1</td>
           <td>0</td>
           <td>0</td>
           <td>0</td>
@@ -89,6 +89,29 @@
           <td>0</td>
           <td><i class="bi bi-info-circle"></i></td>
         </tr>
+        <tr>
+            <td> <i class="bi bi-bookmark-plus-fill"></i> Chi hội phụ nữ số 2</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td><i class="bi bi-info-circle"></i></td>
+        </tr>
+        <tr>
+            <td> <i class="bi bi-bookmark-plus-fill"></i> Chi hội phụ nữ số 3</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td><i class="bi bi-info-circle"></i></td>
+        </tr>
+
       </tbody>
     </table>
   </div>

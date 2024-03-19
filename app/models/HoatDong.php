@@ -96,6 +96,7 @@ class HoatDong {
     $this->id_chi_hoi = $id_chi_hoi;
   }
 
+
   public function toArray() {
     return array(
       "id" => $this->id,

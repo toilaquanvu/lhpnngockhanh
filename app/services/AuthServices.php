@@ -43,7 +43,6 @@ class AuthServices
               } else {
                 header('Location:' . DOMAIN . '?route=login');
               }
-        
         } catch (PDOException $e) {
             echo $e->getMessage();
             return "Login failed";

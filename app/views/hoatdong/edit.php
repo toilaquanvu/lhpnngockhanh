@@ -56,8 +56,15 @@
         </div>
 
         <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label fw-bold">Chi hội</label>
-            <input type="text" class="form-control" id="exampleInputPassword1" name="id_chi_hoi" value="<?php echo $hoatDong->getIdChiHoi(); ?>">
+            <div class="mb-3">
+                <label for="id_chi_hoi" class="form-label
+            ">Chi hội</label>
+                <select class="form-select" id="id_chi_hoi" name="id_chi_hoi">
+                    <?php foreach ($chiHoi as $chiHoiItem) { ?>
+                        <option value="<?php echo $chiHoiItem->getId(); ?>"><?php echo $chiHoiItem->getTenChiHoi(); ?></option>
+                    <?php } ?>
+                </select>
+            </div>
         </div>
 
         <input type="hidden" name="id" value="<?php echo $hoatDong->getId(); ?>">

@@ -43,7 +43,8 @@ class Web
             'luu_hoat_dong' => ['controller' => 'HoatDongController', 'method' => 'store'],
             'sua_hoat_dong' => ['controller' => 'HoatDongController', 'method' => 'edit'],
             'cap_nhat_hoat_dong' => ['controller' => 'HoatDongController', 'method' => 'update'],
-            'dang_ky_hoat_dong' => ['controller' => 'HoatDongController', 'method' => 'updateHoatDongChiHoi'],
+//            'dang_ky_hoat_dong' => ['controller' => 'HoatDongController', 'method' => 'viewGanHoatDong'],
+//            'xac_nhan_dang_ky_hoat_dong' => ['controller' => 'HoatDongController', 'method' => 'ganHoatDong'],
             'xoa_hoat_dong' => ['controller' => 'HoatDongController', 'method' => 'delete'],
         ];
 

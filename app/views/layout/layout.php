@@ -12,7 +12,9 @@
 
 <nav class="navbar navbar-expand navbar-dark bg-primary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="?route=thong_ke">QUẢN LÝ NHÂN SỰ</a>
+    <a class="navbar-brand" href="?route=thong_ke">
+        HỘI LIÊN HIỆP PHỤ NỮ PHƯỜNG NGỌC KHÁNH, QUẬN BA ĐÌNH, THÀNH PHỐ HÀ NỘI
+    </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>

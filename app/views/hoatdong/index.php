@@ -20,16 +20,18 @@ include_once '../app/views/layout/layout.php';
                 phường Ngọc Khánh, Quận Ba Đình, Thành Phố Hà Nội</a></span>
             </span>
 
-        <a class="btn btn-primary" href="?route=dang_ky_hoat_dong">Đăng ký hoạt động cho chi hội</a>
-        <a class="btn btn-primary" href="?route=them_moi_hoat_dong">Thêm mới hoạt động</a>
+<!--        <a class="btn btn-primary" href="?route=dang_ky_hoat_dong">Đăng ký hoạt động cho chi hội</a>-->
+        <a class="btn btn-primary" href="?route=them_moi_hoat_dong">
+            <i class="bi bi-plus-lg"></i>
+            Thêm mới hoạt động</a>
     </div>
 </nav>
 
 <div class="container-fluid">
     <div class="row">
         <div class="col-12">
-            <table class="table">
-                <thead>
+            <table class="table table-bordered table-striped">
+                <thead class="table-dark" >
                 <tr>
                     <th scope="col">Lựa chọn</th>
                     <th scope="col">STT</th>
@@ -56,8 +58,14 @@ include_once '../app/views/layout/layout.php';
                     echo "<td>" . $value->getThoiGian() . "</td>";
                     echo "<td>" . $value->getDiaDiem() . "</td>";
                     echo "<td>" . $value->getIdChiHoi() . "</td>";
-                    echo "<td><a class='btn btn-primary' href='?route=sua_hoat_dong&id=" . $value->getId() . "'>Sửa</a> 
-                            <a class='btn btn-primary' href='?route=xoa_hoat_dong&id=" . $value->getId() . "'>Xóa</a></td>";
+                    echo "<td><a class='btn btn-primary' href='?route=sua_hoat_dong&id=" . $value->getId() . "'>
+<i class='bi bi-pencil-square'></i>
+</a> 
+<a class='btn btn-danger' href='?route=xoa_hoat_dong&id=" . $value->getId() . "' onclick='return confirmDelete()'>
+<i class='bi bi-trash'></i>
+</a>
+
+</td>";
                     echo "</tr>";
                 }
                 ?>
@@ -71,6 +79,8 @@ include_once '../app/views/layout/layout.php';
 
 </body>
 <script>
-
+    function confirmDelete() {
+        return confirm('Bạn có chắc chắn muốn xóa?');
+    }
 </script>
 </html>

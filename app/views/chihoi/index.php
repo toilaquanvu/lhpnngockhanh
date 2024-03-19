@@ -14,9 +14,17 @@
   <?php
     include_once '../app/views/layout/layout.php';
   ?>
-  <div class="container">
-    <h3 class="text-center my-3">Danh sách chi hội</h3>
-    <a href="?route=them_chi_hoi" class="btn btn-primary">Thêm chi hội</a>
+  <div class="container-fluid">
+      <nav class="navbar bg-body-tertiary">
+          <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1 text-uppercase"><i class="bi bi-arrow-left"></i>
+                DANH SÁCH CHI HỘI PHƯỜNG NGỌC KHÁNH, QUẬN BA ĐÌNH, THÀNH PHỐ HÀ NỘI</a></span>
+              </span>
+          </div>
+      </nav>
+    <a href="?route=them_chi_hoi" class="btn btn-primary mb-3">
+        <i class="bi bi-plus-lg"></i>
+        Thêm chi hội</a>
     <table class="table table-bordered table-striped">
       <thead class="table-dark" >
         <tr>
@@ -39,9 +47,15 @@
             echo '<td>' . $item->getChuTich() . '</td>';
             echo '<td>' . $item->getSoLuongHoiVien() . '</td>';
             echo '<td>';
-            echo '<a href="?route=chi_tiet_chi_hoi&id=' . $item->getId() . '" class=" mx-2 btn btn-primary">Xem</a>';
-            echo '<a href="?route=sua_chi_hoi&id=' . $item->getId() . '" class=" mx-2 btn btn-primary">Sửa</a>';
-            echo '<a href="?route=xoa_chi_hoi&id=' . $item->getId() . '" class=" mx-2 btn btn-danger" onclick="return confirmDelete()">Xóa</a>';
+            echo '<a href="?route=chi_tiet_chi_hoi&id=' . $item->getId() . '" class=" mx-2 btn btn-primary">
+<i class="bi bi-eye"></i>
+</a>';
+            echo '<a href="?route=sua_chi_hoi&id=' . $item->getId() . '" class=" mx-2 btn btn-primary">
+<i class="bi bi-pencil"></i>
+</a>';
+            echo '<a href="?route=xoa_chi_hoi&id=' . $item->getId() . '" class=" mx-2 btn btn-danger" onclick="return confirmDelete()">
+<i class="bi bi-trash"></i>
+</a>';
             echo '</td>';
             echo '</tr>';
           }
